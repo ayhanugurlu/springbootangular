@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html ng-app="LoginApplication">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Miminium Admin Template v.1">
+  <meta name="author" content="Isna Nur Azis">
+  <meta name="keyword" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miminium</title>
+
+  <!-- start: Css -->
+  <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+
+  <!-- plugins -->
+  <link rel="stylesheet" type="text/css" href="asset/css/plugins/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="asset/css/plugins/simple-line-icons.css"/>
+  <link rel="stylesheet" type="text/css" href="asset/css/plugins/animate.min.css"/>
+  <link rel="stylesheet" type="text/css" href="asset/css/plugins/icheck/skins/flat/aero.css"/>
+  <link href="asset/css/style.css" rel="stylesheet">
+  <!-- end: Css -->
+
+  <link rel="shortcut icon" href="asset/img/logomi.png">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body id="mimin" class="dashboard form-signin-wrapper">
+
+      <div class="container">
+
+        <div class="form-signin" ng-controller="loginController">
+          <div class="panel periodic-login">
+              <span class="atomic-number">28</span>
+              <div class="panel-body text-center">
+                  <h1 class="atomic-symbol">Mi</h1>
+                  <p class="atomic-mass">14.072110</p>
+                  <p class="element-name">Miminium</p>
+
+                  <i class="icons icon-arrow-down"></i>
+                  <div class="form-group form-animate-text" style="margin-top:40px !important;">
+                    <input type="text" class="form-text"  ng-model="viewModel.loginReq.username" required>
+                    <span class="bar"></span>
+                    <label>Username</label>
+                  </div>
+                  <div class="form-group form-animate-text" style="margin-top:40px !important;">
+                    <input type="password" class="form-text"  ng-model="viewModel.loginReq.password" required>
+                    <span class="bar"></span>
+                    <label>Password</label>
+                  </div>
+                  <label class="pull-left">
+                  <input type="checkbox" class="icheck pull-left" name="checkbox1"/> Remember me
+                  </label>
+                  <input class="btn col-md-12" value="SignIn" ng-click="controller.login()"/>
+
+                  <button ng-click="controller.login()" >
+                      Increment
+                  </button>
+
+
+              </div>
+                <div class="text-center" style="padding:5px;">
+                    <a href="forgotpass.html">Forgot Password </a>
+                    <a href="reg.html">| Signup</a>
+                </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- end: Content -->
+      <!-- start: Javascript -->
+      <script src="asset/js/jquery.min.js"></script>
+      <script src="asset/js/jquery.ui.min.js"></script>
+      <script src="asset/js/bootstrap.min.js"></script>
+
+      <script src="asset/js/plugins/moment.min.js"></script>
+      <script src="asset/js/plugins/icheck.min.js"></script>
+
+
+     <!-- end: Javascript -->
+
+      <!-- ANGULAR -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.15.1/angular-translate.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.js"></script>
+
+      <!-- alertify standard version -->
+      <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
+
+      <!-- alertify angular module -->
+      <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/ngAlertify.js"></script>
+
+
+      <!-- CONFIGURATION -->
+      <script src="../../apps/Configuration.js"></script>
+
+      <!-- LOGIN APPLICATION -->
+      <script src="../../apps/login/LoginApplication.js"></script>
+
+      <!-- LOGGING-->
+      <script src="../../apps/LogLevel.js"></script>
+      <script src="../../apps/Logger.js"></script>
+
+
+      <!-- Login -->
+      <script src="../../apps/login/i18n.js"></script>
+      <script src="../../apps/login/LoginReq.js"></script>
+      <script src="../../apps/login/LoginResp.js"></script>
+      <script src="../../apps/login/LoginFactory.js"></script>
+      <script src="../../apps/login/LoginController.js"></script>
+   </body>
+   </html>
